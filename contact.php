@@ -21,7 +21,7 @@ require_once "pdo.php";
         $to = "fatimazahraeelkhamlychy@gmail.com";
         $subject = "Nouveau message de formulaire de contact";
         $headers = "From: $email";
-      var_dump(mail($to, $subject, $message, $headers))  ;
+      mail($to, $subject, $message, $headers) ;
 
         echo "Votre message a été envoyé avec succès et enregistré dans la base de données.";
     } else {
